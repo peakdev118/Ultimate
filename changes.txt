@@ -1,0 +1,24 @@
+﻿List product / All products / action / product stock history page
+1) Fix not showing the correct new Quantity
+2) Fix not showing the correct summary for respective stores.
+
+/app/Http/Controllers/ProductController.php
+change line: 44, 221, 2223, 2194, 2245-2277, 2303-2328
+
+/app/Utils/ProductUtil.php
+change line: 519,1556, 1567-1569,1595-1598, 1666, 1684-1686, 1811-220,2005
+
+/resources/views/product/stock_history_details.blade.php
+change line: 109
+
+/routes/web.php b/routes/web.php
+change line:33-34
+
+/resources/views/product/tank_stock_history.blade.php
+new file
+
+/resources/views/product/tank_stock_history_details.blade.php
+new file
+
+
+
